@@ -3,6 +3,7 @@
 # Run: python3 parse.py <file>.xml
 #
 # Takes input xml file, and outputs a xml file that only keeps sentences with the desired parts of speeches
+# Supports *.xml as input
 #
 # For this, the desired pos are VVN and VVD:
 #   - VVD - The past tense form of lexical verbs (e.g. forgot, sent, lived, returned)
