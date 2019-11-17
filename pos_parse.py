@@ -54,6 +54,7 @@ def main(file):
   # Create ElementTree from input xml file
   try:
     src_tree = ET.parse(file)
+    print(file)
     root = src_tree.getroot()
   except:
     # some exception handling thing, idk, unfinished
@@ -75,8 +76,8 @@ def main(file):
   # Write to file
   output.write("post_"+file)
 
-
-main(sys.argv[1])
+for arg in sys.argv[1:]:
+  main(arg)
 
 # if __name__ == "__main__":
 #   sys.exit(main(sys.argv[1]))
